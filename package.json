@@ -7,10 +7,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "native-base": "^2.12.1",
     "prop-types": "^15.7.2",
     "react": "16.8.3",
     "react-addons-update": "^15.6.2",
     "react-native": "^0.59.4",
+    "react-native-maps": "^0.24.2",
     "react-native-router-flux": "^4.0.6",
     "react-redux": "^7.0.2",
     "redux": "^4.0.1",
