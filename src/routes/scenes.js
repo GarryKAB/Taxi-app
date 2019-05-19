@@ -4,7 +4,7 @@ import HomeContainer from "./Home/containers/HomeContainer";
 
 const scenes = Actions.create(
     <Scene key="root">
-        <Scene key="home" component={HomeContainer} title="home" initial />
+        <Scene key="carpool" component={HomeContainer} title="carpool" initial />
     </Scene>
 );
 

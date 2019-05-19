@@ -3,6 +3,7 @@ import { View, Text } from "react-native";
 
 import {Container} from 'native-base';
 import MapContainer from './MapContainer';
+// import console = require("console");
 
 class Home extends Component {
 
@@ -18,11 +19,17 @@ class Home extends Component {
             longitudeDelta: 0.0421
         }
         return (
-            // <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            //     <Text>Hello {this.props.name}</Text>
-            // </View>
             <Container>
-                <MapContainer region={region}/>
+                {   this.props.region.latitude &&
+                    <MapContainer
+                        region={this.props.region}
+                        getInputData={this.props.getInputData}
+                        toggleSearchResultModal={this.props.toggleSearchResultModal}
+                        getAddressPredictions={this.props.getAddressPredictions}
+                        resultTypes={this.props.resultTypes}
+                        predictions={this.props.predictions}    
+                    />
+                }
             </Container>
         );
     }
